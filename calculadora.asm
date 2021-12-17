@@ -425,7 +425,7 @@ imprime_resultado:
     call    bin_2_ascii         ; converte valor em ax, salvando no offset apontado por di
 
     ; imprime resultado após conversão p/ ascii
-    mov 	dx, saida
+    mov		dx, saida
     mov 	ah, 9h
     int 	21h
 		
@@ -447,12 +447,12 @@ bin_2_ascii:
     jmp     Dezmil
 
     Dezmil:
-		and     dx, 0
-		mov		bx, 10000
-		div		bx
-		add		al, 0x30
-		mov 	byte [di], al
-		mov		ax, dx
+        and     dx, 0
+        mov	    bx, 10000
+        div	    bx
+        add	    al, 0x30
+        mov 	byte [di], al
+        mov	    ax, dx
         inc     di
 
     Mil:
