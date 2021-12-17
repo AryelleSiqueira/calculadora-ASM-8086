@@ -6,4 +6,4 @@ Neste trabalho, foi construída em ASM 8086, uma calculadora, capaz de realizar 
 
 O programa consiste em um loop, onde cada iteração corresponde a uma operação entre dois operandos digitados pelo usuário. As operações a serem selecionadas são: soma (+),  subtração (-), multiplicação (*), divisão (d) e quit (q). Qualquer outro símbolo selecionado resultará em um erro e o loop é reiniciado.
 
-O tamanho máximo dos operandos é limitado em 5 dígitos para números positivos (digitados sem sinal) e 4 dígitos para números negativos. Já o resultado é limitado em 16 bits e, portanto, deve estar na faixa [-32768 e 32767].
+O tamanho máximo dos operandos é limitado em 5 dígitos para números positivos (digitados sem sinal) e 4 dígitos para números negativos. Já o resultado é limitado em 16 bits e, portanto, deve estar na faixa [-32768, 32767].
